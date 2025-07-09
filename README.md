@@ -1,25 +1,98 @@
-HR Management System - README
-Project Overview
-This JavaFX application is a Human Resources Management System that allows administrators to manage employee and admin records through a user-friendly interface. The system connects to a MySQL database and provides CRUD (Create, Read, Update, Delete) functionality for HR data.
+HR Management Application (JavaFX + MySQL)
+Overview
+This is a JavaFX-based Human Resource (HR) Management System developed as part of Lab 3. It includes GUI-based pages, MySQL database integration, DAO usage with ORM practices, and JUnit testing.
 
 Features
-User Authentication: Secure login system
+✅ Login Module
+Email and Password input
 
-Dashboard: Central navigation hub
+Secure login authentication
 
-Admin Management: Create, view, update, and delete admin records
+✅ Dashboard Module
+Buttons: Admin, Employee, Logout, Exit
 
-Employee Management: Create, view, update, and delete employee records
+Displays welcome message and current date
 
-Database Integration: MySQL backend with JDBC connectivity
+✅ Admin Module
+Create, View, Update, Delete Admin Records
 
-Object-Relational Mapping: DAO pattern implementation
+Navigation: Back, Logout
 
-Prerequisites
-Java JDK 11 or later
+(⚠ Currently, data is not displayed despite successful database connection)
 
-JavaFX SDK
+✅ Employee Module
+Create, View, Update, Delete Employee Records
 
-MySQL Server 8.0+
+Navigation: Back, Logout
 
-MySQL Connector/J (JDBC driver)
+(⚠ Same issue as Admin module: data not displaying)
+
+✅ Database Structure
+Tables:
+
+Admin
+
+Employee Detail
+
+Salary
+
+MySQL database is used to store and retrieve data
+
+✅ DAO and ORM
+Data access through:
+
+AdminDAO.java
+
+EmployeeDAO.java
+
+LoginDAO.java
+
+Uses Java Models mapped to database
+
+✅ Database Connection
+JDBC (MySQL Connector/J)
+
+Includes connection setup with URL, username, and password
+
+✅ JUnit Testing
+Test cases written to calculate yearly salaries
+
+Covers various employee roles and salary structures
+
+Technologies Used
+JavaFX
+
+MySQL
+
+JDBC
+
+Object-Oriented Programming (OOP)
+
+JUnit (Testing)
+
+GitHub (Version Control)
+
+Setup Instructions
+Clone the repository
+
+Import project into your Java IDE (e.g., IntelliJ, Eclipse)
+
+Add JDBC Driver to the classpath (mysql-connector-j-x.x.x.jar)
+
+Configure MySQL database
+
+Create the required tables: Admin, Employee Detail, Salary
+
+Run the application
+
+Login using valid credentials
+
+Known Issues
+Admin and Employee tables connect but do not display data in TableView (UI)
+
+JUnit code is written but not fully integrated/tested yet
+
+Some  of the codes here are from Ai. To make the code best i have to use Ai
+Author
+Niraj Bhandari
+Id: 23093760
